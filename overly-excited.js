@@ -9,7 +9,7 @@ let imagine = ["Imagine","there's","no","heaven","it's","easy","if ","you","try"
 
 // function is called addExcitement. The arguement is theWordArray, added arguement punctuation so that punctuation can be changed. 
 
-function addExcitement (theWordArray, punctuation) {
+let addExcitement = (theWordArray, punctuation) => {
     // buildMeUp is left blank, because it will be filled with the information created below in the for and if loops
     let buildMeUp = ""
     // in order to cycle through wha the function will call, we need a for loop. i is the counter aka what will be the individual words.
@@ -61,3 +61,8 @@ function addExcitement (theWordArray, punctuation) {
 // Now you should define another variable that will hold an array of different words than your existing sentence. 
 // Perhaps name the variable betterSentence, or nextSentence.
 // Invoke your function for a second time, passing in the new sentence variable and a different special character.
+
+// 6.
+// Complete this arrow function template to make your
+// function work with it.
+// let addExcitement = () => { };
