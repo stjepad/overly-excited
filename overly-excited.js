@@ -24,7 +24,8 @@ function addExcitement (theWordArray) {
 // if we start at the (i+1) and the remainder aka what is left over of a divided number is 0, then (that is what the line below means)
         if ((i + 1 )%3==0 )  
 // then, buildMeUp += the individual world of the array add "! ". Basically add a "! " after every word that has a remainder of 0, which ends up being every third word.
-        {buildMeUp += theWordArray[i] + "! "} 
+// to repeat exclamation points add a .repeat method. Then in the method call out the location to repeat at. 
+{buildMeUp += theWordArray[i] + "!".repeat((i + 1)/3) } 
 // otherwise, just leave the words in the normal sequence
         else {
         buildMeUp += `${theWordArray[i]} `}
@@ -42,3 +43,6 @@ addExcitement(sentence)
 // If the current value of the counter variable can be evenly divided by 3 
 // - using the JavaScript remainder operator - 
 // then add a single exclamation point (!) to the output.
+
+// Add logic in the addExcitement function to increase the number of exclamation points after every third word. 
+// The number of exclamation points (!) will be determined by how many times the counter variable can be divided by 3.
